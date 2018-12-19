@@ -1,11 +1,14 @@
-import  app from './app';
+// import  app from './app';
 import test from 'ava';
+import { Application } from 'spectron';
 //import soap from '../../../testcafe/framework/utils/soap-client';
 //const utils = require('../../../testcafe/pages');
 //describe('SMIME feature enabled', function() {
 //	this.timeout(0);
 test.before(async t  => {
-	t.context.app = app;
+	t.context.app = new Application({
+		path: 'C:\\Program Files\\Zimbra X\\Zimbra X.exe'
+	});
 	//console.log('Starting the app');
 	//await app.client.element('input#login-form_2-email').keys('mm7');
 	return await t.context.app.start().then(async() => {

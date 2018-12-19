@@ -1,5 +1,5 @@
 //const { path } = require('path');
-const Application = require('spectron').Application;
+const { Application } = require('spectron');
 //const path = require('path');
 //const baseDir = path.join(__dirname, '../../../');
 //const electronBinary = path.join(__dirname, '../../../node_modules', '.bin', 'electron');
